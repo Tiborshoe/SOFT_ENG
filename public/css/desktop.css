@@ -1,0 +1,676 @@
+@media only screen and (min-width: 1309px) {
+    /* Global styles */
+    /* Change the scrollbar color */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #dae9dc; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #da8ab3; /* Color of the scrollbar thumb */
+    border-radius: 2px; /* Rounded corners for the thumb */
+    
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0cb926; /* Color of the thumb on hover */
+    animation: scroll-animation 15s ease infinite;
+}
+
+@keyframes scroll-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+    
+   
+
+   body{
+    padding: 2px;
+    background-color: #da8ab3;
+
+   }
+
+   
+        .header {
+        position: fixed;
+        width: 100%; 
+        border: 2px solid rgb(209, 116, 209);
+        border-radius: 0.5vw;
+        background-color: #e6edf4;
+        top: 0px;
+        right: 0px;
+        color: rgb(6, 9, 7);
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        z-index: 99;
+        
+    }
+    .header ul img{
+        height: 3vw;
+        border: 1px solid rgb(201, 67, 211);
+
+    }
+.header ul{
+    
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    gap: 0px; 
+}
+
+    .header ul li {
+
+        cursor: pointer;
+    }
+
+    .header ul li a {
+        position: relative;
+       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        display: block;
+        left: 35px;
+        top: 12px;
+        padding: 1px 10px;
+        text-decoration: none;
+        color: #000000; /* Example text color */
+        transition: color 0.3s ease-in-out; /* Transition effect for color change */
+        transition: transform 0.1s ;
+    }
+    .header ul li a:hover{
+
+        transform: scale(1.0800);
+    }
+      .mainhome{
+        background: linear-gradient(to right, rgba(20, 154, 244, 0.796), rgba(194, 21, 105, 0.738), rgba(238, 227, 11, 0.733));
+        height: 100%;
+       
+        margin: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; /* Cover the whole area */
+        background-size: 200% 200%;
+        background-position: center; /* Center the background */
+        z-index: -1; /* Send the background behind other content */
+        animation: gradient-animation 15s ease infinite;
+        border-bottom: 3px solid  white;
+       
+
+      }
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .mainhome img{
+
+        mix-blend-mode: overlay;
+        position: absolute;
+        width: 99%;
+        height: auto;
+        opacity: 1;
+        z-index: -1;
+      }
+
+    .Title {
+        position: relative;
+       
+        top: 13%;
+        text-align: center;
+        padding: 4.8% 2.5%; /* Adjusted padding */
+        
+    }
+    
+    .Title h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 40px;
+        position: relative;
+        bottom: 20px;
+        
+        padding-top: 100px;
+        color: #fcf9f9; /* Example color */
+    }
+    
+    .Title p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        position: relative;
+        top: -10px;
+        color: #ffffff; /* Example color */
+        max-width: 1000px; /* Example maximum width */
+        margin: 0 auto;
+        font-size: 14px; /* Adjust the font size for better readability */
+        line-height: 1.6; /* Improved line height for better readability */
+        padding: 0 15px; /* Optional padding for the paragraph */
+    }
+    
+    .button {
+        
+    position: relative;
+    top: 4%;
+    opacity: 0.9;
+    display: flex; /* To use flexbox properties */
+    justify-content: center; /* Centers the button horizontally */
+    align-items: flex-end; /* Align items to the bottom */
+    padding-bottom: 130px ;
+
+   
+}
+
+    .button a {
+        position: relative;
+        left: -10px;
+        border: 1.5px solid rgb(255, 250, 250);
+        display: inline-block;
+       
+        background-color: transparent;
+     
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: transform 0.1s ;
+   
+    }
+
+    .button a:hover{
+        border: 1px solid white;
+        font-weight: bold;
+        background: linear-gradient(to right, rgba(190, 241, 142, 0.57), rgba(194, 21, 105, 0.553), rgba(10, 124, 206, 0.471));
+        transform: scale(1.0400);
+    
+    }
+
+
+    
+    html, body {
+        height: 100%; /* Ensure full height */
+        margin: 0; /* Remove default margin */
+    }
+
+
+    .aboutmore {
+        height: 70%;
+        display: flex;
+        flex-direction: row; /* Keep this as is */
+        align-items: center;
+        padding-bottom: 70px;
+        justify-content: flex-start;
+   
+        background-color: #c9d6e3;
+    }
+    
+    .aboutmore h2 {
+      position: relative;
+      top: 30px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border: 3px solid rgb(124, 27, 199);
+        color: rgba(0, 0, 0, 0.77);
+       border-style: dashed;
+        font-size: 12px;
+        left: 200px;
+        font-weight: 400;
+        max-width: 450px;
+        padding: 20px;
+        word-wrap: break-word;
+        margin-left: 40px; /* Space from the left */
+        flex: 1; /* Allows text to use available space */
+    }
+    .aboutmore h2 span {
+      font-size: 15px; /* Adjust the font size or other styles as needed */
+      font-weight: 490; /* Adjust font weight */
+      text-decoration: underline; /* Ensure underline */
+      color: rgba(38, 18, 33, 0.77); /* Example of changing the color */
+    }
+    .aboutmore h2 strong {
+      font-size:14px; /* Adjust the font size or other styles as needed */
+      font-weight:bold; /* Adjust font weight */
+      text-decoration: underline; /* Ensure underline */
+      color: rgba(38, 18, 33, 0.77); /* Example of changing the color */
+    }
+    .slideshow-container img {
+      position: relative;
+      top: 40px;
+      width: 80%; /* Adjust the width as needed */
+      height: auto; /* Maintain the aspect ratio */
+      max-width: 500px; /* Set a max-width for the images */
+      margin: auto; /* Center the image horizontally */
+      display: block; /* Ensure the image is a block element */
+      border: 3px solid rgba(30, 105, 122, 0.405);
+    }
+    
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+    }
+    
+    
+
+    /**/
+    
+    .about {
+        position: relative;
+        padding: 3.125% 2.5%; /* Adjusted padding */
+        text-align: center;
+        color: white; /* Ensure text is visible on dark background */
+        overflow: hidden; /* Ensure child div stays within the parent */
+        height: 100%; /* Set height to 100% to fill the parent */
+        border-top: 2px solid rgb(255, 255, 255);
+        border-style: dashed;
+       
+    }
+    
+    .background {
+        position: absolute; /* Positioning to cover the parent */
+        background: linear-gradient(to bottom,#bfdbe4, #0379a1);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; /* Cover the whole area */
+        background-size: cover; /* Cover the entire area */
+        background-position: center; /* Center the background */
+        z-index: -1; /* Send the background behind other content */
+        animation: gradient-animation 15s ease infinite;
+
+        
+    }
+    .about .servtitle h1{
+        position: relative;
+        padding: 3.125% 2.5%; /* Adjusted padding */
+        text-align: center;
+        color: white; /* Ensure text is visible on dark background */
+        overflow: hidden; /* Ensure child div stays within the parent */
+        height: 100%; /* Set height to 100% to fill the parent */
+        border-top: 2px solid rgb(255, 255, 255);
+        background-color: #50567742; /* Example background color */
+        border-style: dashed;
+    }
+    .about .servtitle P{
+        color: #2a1b49c4; /* Example color */
+        max-width: 1000px; /* Example maximum width */
+        margin: 0 auto;
+        font-size: 13px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .about h1 {
+        
+        font-size: 25px;
+        color: #e6dee8; /* Example color */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .about p {
+        color: #ffffff; /* Example color */
+        max-width: 1000px; /* Example maximum width */
+        margin: 0 auto;
+        font-size: 13px;
+    }
+    
+    .about ul {
+        padding-top: 50px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .about ul li {
+        font-size: 15px;
+        border: 1px solid rgba(253, 247, 247, 0.596);
+        border-radius: 10px;
+        background-color: #50567775; /* Example background color */
+        padding: 2.5%; /* Adjusted padding */
+        margin: 1.25%; /* Adjusted margin */
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Example box shadow */
+        text-align: center;
+        flex: 1 0 300px; /* Example flex property */
+        transition: transform 0.1s ease-in-out;
+    }
+    
+    .about ul li:hover {
+        transform: scale(1.0400);
+    }
+    
+    .about li p {
+        text-align: justify; /* Change 'center' to 'justify' for a more organized layout */
+        width: 80%; /* Adjust the width of the paragraphs if necessary */
+        margin: 0 auto; /* Center the paragraphs horizontally */
+        padding: 1px; /* Add some padding for better spacing */
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        line-height: 1.5; /* Increase line height for better readability */
+    }
+    
+
+
+.testimonials {
+    height: auto;
+    border-top: 1px solid rgba(0, 0, 0, 0.496);
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    background-color: #e1e1e1;
+    padding-bottom: 0;
+}
+
+.row {
+    display: flex; /* Make the row a flex container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px;
+    
+}
+
+.testimonials-col {
+    flex-basis: 30%;
+    height: 220px;
+    border-radius: 10px;
+    margin-bottom: 0%; /* Adjust this value to reduce the gap */
+    text-align: left;
+    background: #e6dede;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.221);
+   
+}
+.testimonials-col:hover{
+    transform: scale(1.0400);
+
+}
+.testimonials-col img {
+    border: 1px solid rgb(32, 22, 22);
+    max-width: 30%; /* Adjust the max-width as needed */
+    max-height: 30%;
+    border-radius: 50%;
+}
+
+.testimonials-col .text {
+    flex-grow: 1; /* Let the text take remaining space */
+    padding-left: 20px; /* Add space between image and text */
+}
+
+.testimonials-col p {
+    margin: 0; /* Remove default margin */
+}
+
+.testimonials-col h3 {
+    margin-top: 15px;
+}
+.testimonials-col h4 {
+    margin-top: 1px;
+    font-size: 30px;
+}
+
+/* Style for stars */
+.fa-star {
+    color: gold;
+}
+
+.fa-star-o {
+    color: #000000; /* Color for empty stars */
+}
+
+/* Ensure stars are displayed properly */
+.stars {
+    
+    display: flex;
+    align-items: center;
+}
+
+.stars .fa {
+    font-size: 20px; /* Adjust size as needed */
+    margin-right: 5px; /* Add space between stars */
+}
+.stars h4 {
+    font-size: 20px;
+    filter: brightness(4);
+    color: rgb(23, 193, 255); /* Change the color to your desired color */
+}
+
+.footer{
+    position: relative;
+    padding-top: 20px ;
+    top: 30px;
+    background-color: pink;
+    width: 100px;
+}
+
+
+.contact {
+    border: 1px solid black;
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.592)), url('../images/admin building.webp');
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.button-container {
+    position: relative;
+    margin-top: 80px;
+    margin-left: 200px;
+  }
+
+
+.visit-button {
+    background-color: rgb(208, 221, 225); 
+    border: 2px solid rgba(40, 57, 88, 0.707);/* Change to red on click */
+    color: rgba(9, 13, 16, 0.77);
+    padding: 10px 20px; /* Button padding */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+  }
+  
+  .visit-button:hover {
+    border-style: dashed;
+    background-color: #0a1a1d; /* Darker background on hover */
+  }
+
+.contact a {
+    border: 1.5px solid rgb(255, 250, 250);
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.1s ;
+}
+.contact a:hover{
+    transform: scale(1.0500);
+
+}
+.contact h1{
+    color: white;
+}
+
+.footer {
+    border: 1px solid black;
+    background-color:#e1e1e1;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4 {
+
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bolder;
+    
+}
+
+.footer p {
+    position: relative;
+    bottom: 1rem;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer .icons {
+    margin-top: 15px;
+}
+
+.footer .icons img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+.footer .icons img:hover{
+    transform: scale(1.3);
+
+}
+
+/* General styling for the login section */
+
+.login-section {
+    height: 100%;
+    top: 36px;
+    position: fixed;
+    max-width: 400px;
+    left: 0;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Invisible by default */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth slide and fade-in */
+    z-index: 123;
+}
+
+.login-section.show {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move into view */
+    pointer-events: auto; /* Enable interaction */
+}
+
+/* Heading style */
+.login-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Style for form labels */
+.login-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+}
+
+/* Style for input fields */
+.login-section input[type="email"],
+.login-section input[type="password"] {
+    width: calc(100% - 20px); /* Full width with padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+}
+
+/* Style for submit button */
+.login-section button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #007bff; /* Blue button */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-section button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .login-section {
+        padding: 15px;
+    }
+    .login-section h2 {
+        font-size: 20px;
+    }
+    .login-section button {
+        font-size: 14px;
+    }
+}
+
+.hidden {
+    opacity: 0; /* Fully transparent */
+    transform: translateX(-100%); /* Move it off-screen to the right */
+    pointer-events: none; /* Prevent interaction when hidden */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.burger-icon {
+    position: fixed; /* Use fixed to keep it on the right even when scrolling */
+    top: 20px; /* Adjust the top distance from the top of the page */
+    right: 20px; /* Position it 20px from the right side of the page */
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    padding: 10px;
+    color: #d48383;
+    transition: color 0.3s;
+    z-index: 100;
+}
+
+.burger-icon:hover {
+    color: #007bff;
+}
+
+.desktop-only-message.hidden {
+    display: none; /* Hide the message when it's not needed */
+}
+}

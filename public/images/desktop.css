@@ -1,0 +1,464 @@
+@media only screen and (min-width: 1309px) {
+    /* Global styles */
+    body {
+        margin: 0;
+        padding: 2px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.651)), url(Campus-Image-of-City-Univ.webp);
+        background-size:auto;
+    
+    }
+
+        .header {
+        position: absolute; 
+        top: 0;
+        right: 50px;
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 18px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+.header ul{
+
+    border-radius: 5px;
+    list-style-type: none;
+    display: flex;
+    gap: 0px; 
+}
+
+    .header ul li {
+
+        cursor: pointer;
+    }
+
+    .header ul li a {
+       
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff; /* Example text color */
+        transition: color 0.3s ease-in-out; /* Transition effect for color change */
+        transition: transform 0.1s ;
+    }
+    .header ul li a:hover{
+
+        transform: scale(1.0800);
+    }
+    .Title {
+       position: relative;
+       top: 50px;
+        text-align: center;
+        padding: 4.8% 2.5%; /* Adjusted padding */
+    }
+
+    .Title h1 {
+        font-size: 40px;
+        position: relative;
+        bottom: 20px;
+        padding-top: 100px;
+        color: #fcf9f9; /* Example color */
+    }
+
+    .Title p {
+        position: relative;
+        top: -10px;
+        color: #ffffff; /* Example color */
+        max-width: 1000px; /* Example maximum width */
+        margin: 0 auto;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .button {
+        
+    position: relative;
+    bottom: 0px;
+    display: flex; /* To use flexbox properties */
+    justify-content: center; /* Centers the button horizontally */
+    align-items: flex-end; /* Align items to the bottom */
+    padding-bottom: 180px ;
+    border-bottom: 2px solid black;
+   
+}
+
+    .button a {
+        position: relative;
+        left: -10px;
+        border: 1.5px solid rgb(255, 250, 250);
+        display: inline-block;
+        background-color: transparent;
+        color: #ffffff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: transform 0.1s ;
+    }
+
+    .button a:hover{
+        border: 1px solid white;
+        transform: scale(1.0400);
+    }
+
+
+    .about {
+        
+        background-color: #e1e1e1; /* Example background color */
+        padding: 3.125% 2.5%; /* Adjusted padding */
+        text-align: center;
+    }
+
+    .about h1 {
+        font-size: 35px;
+        color: #000000; /* Example color */
+    }
+
+    .about p {
+        
+        color: #000000; /* Example color */
+        max-width: 1000px; /* Example maximum width */
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .about ul {
+        padding-top: 50px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        
+    }
+
+    .about ul li {
+        
+        font-size: 15px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #fff; /* Example background color */
+        padding: 2.5%; /* Adjusted padding */
+        margin: 1.25%; /* Adjusted margin */
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Example box shadow */
+        text-align: center;
+        flex: 1 0 300px; /* Example flex property */
+        transition: transform 0.1s ease-in-out;
+
+    }
+    .about ul li:hover{
+        transform: scale(1.0400);
+    }
+    .about li p {
+        text-align: justify; /* Change 'center' to 'justify' for a more organized layout */
+        width: 80%; /* Adjust the width of the paragraphs if necessary */
+        margin: 0 auto; /* Center the paragraphs horizontally */
+        padding: 1px; /* Add some padding for better spacing */
+        line-height: 1.5; /* Increase line height for better readability */
+    }
+
+    .global {
+        border-top: 1px solid rgba(0, 0, 0, 0.496);
+        background-color: #e1e1e1; /* Example background color */
+        padding: 3.125% 2.5%; /* Adjusted padding */
+        text-align: center;
+    }
+
+    .global h1 {
+        color: #000000; /* Example color */
+    }
+
+    .global ul {
+        
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0 150px;
+    }
+
+    .global ul li {
+        margin: 1.25%; /* Adjusted margin */
+        padding-top: 50px;
+     
+    }
+    
+/* Original CSS */
+.global ul li img {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.global ul li img:hover {
+    
+    border-radius: 5px;
+    border: 2px solid rgb(255, 255, 255);
+    filter: brightness(0.400); /* Rotate hue to red (90 degrees) */
+    transform: scale(1.0600);
+}
+
+  /* CSS for h1 and p elements inside .global div */
+.global h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.global p {
+    color: #000000; /* Example color */
+    max-width: 1000px; /* Example maximum width */
+    margin: 0 auto;
+    font-size: 14px;
+}
+/* Modified CSS for displaying captions */
+.global ul li {
+    position: relative; /* Ensure positioning context for caption */
+}
+
+.global ul li .caption {
+    font-size: 40px;
+    font-weight: bolder;
+    position: absolute; /* Position captions absolutely */
+    bottom: 20%;
+    left: -12px; /* Align caption to the left edge of the image */
+    width: 100%; /* Ensure full width of the image for the caption */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 0 0 5px 5px; /* Rounded corners at the bottom */
+    opacity: 0; /* Initially hide caption */
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none; /* Make captions non-interactive */
+    justify-content: center;
+    transform: translateX (-50%);
+    transition: 0.3s ease-in-out;
+}
+
+.global ul li:hover .caption {
+    opacity: 1; /* Show caption on hover */
+    bottom: 49%;
+}
+.Facilities {
+    border-top: 1px solid rgba(0, 0, 0, 0.496);
+    background-color: #e1e1e1; /* Example background color */
+    padding: 3.125% 2.5%; /* Adjusted padding */
+    text-align: center;
+}
+
+.Facilities h1 {
+    color: #000000; /* Example color */
+}
+.Facilities h2 {
+    font-weight: 500;
+    color: #000000; /* Example color */
+    max-width: 1000px; /* Example maximum width */
+    margin: 0 auto;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.Facilities h3 {
+    text-align: left;
+    margin-top: 5px;
+    color: #000000; /* Example color */
+    padding-bottom: 20px;
+}
+.Facilities p {
+
+    font-size: 14px;
+    max-width: 360px;
+    text-align: left;
+    margin-top: -20px;
+    color: #000000; /* Example color */
+    padding-bottom: 20px;
+}
+.Facilities ul {
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 150px;
+}
+.Facilities ul li img {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+.Facilities ul li img:hover {
+   transform: scale(1.0400);
+}
+
+
+
+
+.testimonials {
+    border-top: 1px solid rgba(0, 0, 0, 0.496);
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    background-color: #e1e1e1;
+    padding-bottom: 0;
+}
+
+.row {
+    display: flex; /* Make the row a flex container */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    gap: 30px;
+    
+}
+
+.testimonials-col {
+    flex-basis: 30%;
+    height: 220px;
+    border-radius: 10px;
+    margin-bottom: 0%; /* Adjust this value to reduce the gap */
+    text-align: left;
+    background: #e6dede;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.221);
+   
+}
+.testimonials-col:hover{
+    transform: scale(1.0400);
+
+}
+.testimonials-col img {
+    border: 1px solid rgb(32, 22, 22);
+    max-width: 30%; /* Adjust the max-width as needed */
+    max-height: 30%;
+    border-radius: 50%;
+}
+
+.testimonials-col .text {
+    flex-grow: 1; /* Let the text take remaining space */
+    padding-left: 20px; /* Add space between image and text */
+}
+
+.testimonials-col p {
+    margin: 0; /* Remove default margin */
+}
+
+.testimonials-col h3 {
+    margin-top: 15px;
+}
+.testimonials-col h4 {
+    margin-top: 1px;
+    font-size: 30px;
+}
+
+/* Style for stars */
+.fa-star {
+    color: gold;
+}
+
+.fa-star-o {
+    color: #000000; /* Color for empty stars */
+}
+
+/* Ensure stars are displayed properly */
+.stars {
+    
+    display: flex;
+    align-items: center;
+}
+
+.stars .fa {
+    font-size: 20px; /* Adjust size as needed */
+    margin-right: 5px; /* Add space between stars */
+}
+.stars h4 {
+    font-size: 20px;
+    filter: brightness(4);
+    color: rgb(23, 193, 255); /* Change the color to your desired color */
+}
+
+
+.contact {
+    border: 1px solid black;
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.57), rgba(0, 0, 0, 0.592)), url(Campus-Image-of-City-Univ.webp); /* Corrected background-image syntax */
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact a {
+    border: 1.5px solid rgb(255, 250, 250);
+    display: inline-block;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.1s ;
+}
+.contact a:hover{
+    transform: scale(1.0500);
+
+}
+.contact h1{
+    color: white;
+}
+
+.footer {
+    border: 1px solid black;
+    background-color:#e1e1e1;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.footer h4 {
+
+    color: #000000;
+    font-size: 25px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: bolder;
+    
+}
+
+.footer p {
+    position: relative;
+    bottom: 1rem;
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer .icons {
+    margin-top: 15px;
+}
+
+.footer .icons img {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    margin-right: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+.footer .icons img:hover{
+    transform: scale(1.3);
+
+}
+
+
+}
